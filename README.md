@@ -8,7 +8,7 @@ Lock automation for short-term rentals using Hubitat and Google Sheets.
 5. Add additional tabs for additional locks.
 6. Create an Apps Script by clicking "Exetensions --> Apps Script"
 7. Copy and paste this code over the Code.gs file.
-8. Replace HUBITAT_ACCESS_TOKEN and HUBITAT_URL_STUB with entries from 
+8. Replace HUBITAT_ACCESS_TOKEN and HUBITAT_URL_STUB with entries from the Maker API setup screen.
 9. In the PROPERTIES constant below, enter the Google Sheets tab names in the 'sheetname' field and
    links to your .ics calendars in the 'link' field.
 10. Save this script.
