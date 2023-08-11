@@ -404,7 +404,7 @@ function fetchAppointments(property) {
         type = "vrbo"
       }
       
-      if (startDate && startDate >= today && startDate <= endDate) {
+      if (startDate && (startDate >= today || endDate >= today) && startDate <= endDate) {
         console.log("Adding appointment: " + startDate + " " + endDate + " " + " " + name + " " + phone + " " + code)
         appointments.push([type + ":" + Utilities.formatDate(startDate,timeZone,"yyyyMMdd"), code, startDate, endDate, type, type + ": " + name]);
       }
